@@ -30,8 +30,7 @@ class SecureLogbookFilterTest {
     void shouldSupportWithMethods() {
         final SecureLogbookFilter filter = new SecureLogbookFilter(Logbook.create())
                 .withAsyncOnCompleteListenerWrapper(AsyncOnCompleteListenerWrapper.identity())
-                .withMaxBufferSize(1024L)
-                .withFormRequestMode(FormRequestMode.BODY);
+                .withMaxBufferSize(1024L);
 
         assertNotNull(filter);
     }

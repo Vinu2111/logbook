@@ -39,10 +39,6 @@ public final class SecureLogbookFilter implements HttpFilter {
         return new SecureLogbookFilter(filter.withMaxBufferSize(maxBufferSize));
     }
 
-    public SecureLogbookFilter withFormRequestMode(final FormRequestMode formRequestMode) {
-        return new SecureLogbookFilter(filter.withFormRequestMode(formRequestMode));
-    }
-
     @Override
     public void doFilter(final HttpServletRequest request, final HttpServletResponse response,
             final FilterChain chain) throws ServletException, IOException {
